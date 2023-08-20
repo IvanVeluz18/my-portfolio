@@ -1,5 +1,6 @@
 import Navbar from '@/scenes/Navbar'
 import Home from '@/scenes/Home'
+import Projects from '@/scenes/Projects'
 import { CurrentPage } from './shared/types';
 import { useEffect, useState } from "react";
 
@@ -22,14 +23,15 @@ const App = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, []);
 
-
   return (
-    <div>
+    <div className="app bg-gray-20">
       <Navbar
         isTopOfPage={isTopOfPage}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage} 
       />
+      <Home setCurrentPage={setCurrentPage} />
+      <Projects setCurrentPage={setCurrentPage} />
     </div>
   )
 }
