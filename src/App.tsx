@@ -1,6 +1,8 @@
 import Navbar from '@/scenes/Navbar'
 import Home from '@/scenes/Home'
 import Projects from '@/scenes/Projects'
+import Contacts from '@/scenes/Contacts'
+import Footer from '@/scenes/Footer'
 import { CurrentPage } from './shared/types';
 import { useEffect, useState } from "react";
 
@@ -32,6 +34,8 @@ const App = () => {
       />
       <Home setCurrentPage={setCurrentPage} />
       <Projects setCurrentPage={setCurrentPage} />
+      <Contacts setCurrentPage={setCurrentPage} />
+      <Footer />
     </div>
   )
 }

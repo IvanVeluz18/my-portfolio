@@ -4,7 +4,13 @@ export enum CurrentPage {
     Contacts= "contacts"
 }
 
-export interface ClassType {
+export interface ProjectType {
+    icon: string;
+    title: string;
+    description: string;
+  }
+
+export interface OtherProjectType {
     name: string;
     description?: string;
     image: string;

@@ -4,11 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "gray-20": "#F8F4EB",
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
         "gray-500": "#55828B",
-        "primary-100": "#C9E4C9",
+        "primary-100": "#99E2B4",
         "primary-300": "#364958",
         "primary-500": "#2A3D45",
         "secondary-500": "#CCDAD1",
