@@ -6,6 +6,18 @@ import Footer from '@/scenes/Footer'
 import { CurrentPage } from './shared/types';
 import { useEffect, useState } from "react";
 
+
+{/*
+*CHANGE MAIN PAGE STYLE
+*ADD TECHONOLOGIES AND SKILLS
+*IMPROVE UI
+*CHANGE THE MAIN PROJECTS SECTION
+** OPTIONAL
+* DARK AND LIGHT MODE
+* EVEN BETTER ANIMATIONS AND TRANSITIONS
+* CASE STUDY OR NEW STUFF
+*/}
+
 const App = () => {
 
   const [currentPage, setCurrentPage]= useState<CurrentPage>(
