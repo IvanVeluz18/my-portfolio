@@ -4,22 +4,25 @@ import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import OtherProject from "./OtherProjects";
 import ProjectContainer from "./ProjectContainer";
+import fashionbug from '@/assets/fashionbug.png'
+import gradmatic from '@/assets/gradmatic.png'
+import yologkd from '@/assets/yologkd.png'
 
 const ProjectsBlock: Array<ProjectType> = [
   {
-    icon: "icon1",
+    image: yologkd,
     title: "YOLOv5- GKD",
     description: 
       "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et."
   },
   {
-    icon: "icon2",
+    image: gradmatic,
     title: "Fashion Bug",
     description: 
       "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id."
   },
   {
-    icon: "icon3",
+    image: fashionbug,
     title: "GradMatic",
     description: 
       "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
@@ -103,12 +106,13 @@ const Projects = ({setCurrentPage}: Props) => {
             viewport={{ once: true, amount: 0.5}}
             variants={container}
           >
-                      {ProjectsBlock.map((benefit: ProjectType) => (
+          {ProjectsBlock.map((project: ProjectType) => (
             <ProjectContainer
-              key={benefit.title}
-              icon={benefit.icon}
-              title={benefit.title}
-              description={benefit.description}
+              key={project.title}
+              image={project.image}
+              icon=""
+              title={project.title}
+              description={project.description}
               setCurrentPage={setCurrentPage}
             />
           ))}

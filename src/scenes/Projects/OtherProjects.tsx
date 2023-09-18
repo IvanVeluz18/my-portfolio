@@ -3,9 +3,10 @@ type Props = {
     description?: string;
     image: string;
     link?: string;
+    icon?: string;
   };
   
-  const Class = ({ name, description, image, link }: Props) => {
+  const Class = ({ name, description, image, link, icon }: Props) => {
     const overlayStyles = `p-5 absolute z-30 flex
     h-[380px] w-[450px] flex-col items-center justify-center
     whitespace-normal bg-primary-500 text-center text-white

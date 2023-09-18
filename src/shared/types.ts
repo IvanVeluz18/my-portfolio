@@ -5,7 +5,8 @@ export enum CurrentPage {
 }
 
 export interface ProjectType {
-    icon: string;
+    image: string;
+    icon?: string;
     title: string;
     description: string;
   }

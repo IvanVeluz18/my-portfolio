@@ -31,7 +31,7 @@ const Navbar = ({isTopOfPage, currentPage, setCurrentPage}: Props) => {
             <div>
             {isAboveMediumScreens ? (
                 <div className={`${flexBetween} w-full`}>
-                  <div className={`${flexBetween} gap-8 text-sm`}>
+                  <div className={`${flexBetween} gap-8 text-md`}>
                     <Link
                       page="Home"
                       currentPage={currentPage}

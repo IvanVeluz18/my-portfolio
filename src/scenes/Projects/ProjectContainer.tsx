@@ -8,20 +8,21 @@ const childVariant = {
 };
 
 type Props = {
+  image: string;
   icon: string;
   title: string;
   description: string;
   setCurrentPage: (value: CurrentPage) => void;
 };
 
-const ProjectContainer = ({icon, title, description, setCurrentPage}: Props) => {
+const ProjectContainer = ({image, title, description, setCurrentPage}: Props) => {
   return (
   <motion.div 
     variants={childVariant}
     className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center">
     <div className="mb-4 flex justify-center">
-      <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
-        icon placeholder
+      <div className=" h-100% rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+        {image}
       </div>
     </div>
     <h4 className="font-bold">{title}</h4>
