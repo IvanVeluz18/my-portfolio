@@ -38,6 +38,11 @@ const Navbar = ({isTopOfPage, currentPage, setCurrentPage}: Props) => {
                       setCurrentPage={setCurrentPage}
                     />
                     <Link
+                      page="About"
+                      currentPage={currentPage}
+                      setCurrentPage={setCurrentPage}
+                    />
+                    <Link
                       page="Projects"
                       currentPage={currentPage}
                       setCurrentPage={setCurrentPage}
@@ -75,6 +80,11 @@ const Navbar = ({isTopOfPage, currentPage, setCurrentPage}: Props) => {
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Link
               page="Home"
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+            <Link
+              page="About"
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
             />

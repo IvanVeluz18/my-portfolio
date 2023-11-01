@@ -1,7 +1,9 @@
 export enum CurrentPage {
     Home = "home",
+    About= "about",
     Projects = "projects",
-    Contacts= "contacts"
+    Contacts= "contacts",
+    
 }
 
 export interface ProjectType {

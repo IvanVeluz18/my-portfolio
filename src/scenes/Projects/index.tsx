@@ -84,43 +84,27 @@ type Props = {
 const Projects = ({setCurrentPage}: Props) => {
   return (
     <>
-      <section id="projects" className="mx-auto min-h-full w-5/6 py-20">
-        <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{once:true, amount: 0.5}} 
-            transition={{duration: 0.5}}
-            variants={{
-              hidden: {opacity: 0, x:-50},
-              visible: {opacity: 1, x: 0}
-            }}
-            className="md:my-5 md:w-/5"
-          >
-            <HText>MY PROJECTS</HText>
-          </motion.div>
-          <motion.div
-            className="md:flex items-center justify-between gap-8 mt-5"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5}}
-            variants={container}
-          >
-          {ProjectsBlock.map((project: ProjectType) => (
-            <ProjectContainer
-              key={project.title}
-              image={project.image}
-              icon=""
-              title={project.title}
-              description={project.description}
-              setCurrentPage={setCurrentPage}
-            />
-          ))}
+      <section id="projects" className=" bg-white-100">
+        <motion.div className="mx-auto w-5/6 pt-20 pb-1">
+          <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once:true, amount: 0.5}} 
+              transition={{duration: 0.5}}
+              variants={{
+                hidden: {opacity: 0, x:-50},
+                visible: {opacity: 1, x: 0}
+              }}
+              className="md:my-5"
+            >
+              <HText>MY PROJECTS</HText>
+            </motion.div>
           </motion.div>
         </motion.div>
       </section>
 
-      <section id="moreprojects" className="w-full bg-primary-100 py-40">
+      <section className="w-full pt-24 pb-32 bg-primary-100 py-40">
         <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
           <motion.div
           className="mx-auto w-5/6"
@@ -134,7 +118,44 @@ const Projects = ({setCurrentPage}: Props) => {
           }}
           >
             <div className="md:w-3/5">
-              <HText>MORE PROJECTS</HText>
+              <HText>FashionBug</HText>
+              <p className="py-5">
+                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                enim mattis odio in risus nunc.
+              </p>
+            </div>
+          </motion.div>
+            <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+              <ul className="w-[2800px] whitespace-nowrap">
+                {otherProjects.map((item: OtherProjectType, index) => (
+                  <OtherProject
+                    key={`${item.name}-${index}`}
+                    name={item.name}
+                    description={item.description}
+                    link={item.link}
+                    image={item.image}
+                  />
+                ))}
+              </ul>
+            </div>
+        </motion.div>
+
+        <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
+          <motion.div
+          className="mx-auto w-5/6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          >
+            <div className="md:w-3/5">
+              <HText>FashionBug</HText>
               <p className="py-5">
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
                 tellus quam porttitor. Mauris velit euismod elementum arcu neque

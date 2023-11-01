@@ -17,7 +17,11 @@ type Props = {
         <div className={overlayStyles}>
           <p className="text-2xl">{name}</p>
           <p className="mt-5">{description}</p>
-          <a href="">{link}</a>
+          
+          <a href={link} target="blank">
+            <input type="button" value="Project Link" className="mt-5 border-gray-100 rounded-full bg-secondary-500 px-8 py-3 transition duration-300 hover:text-white" />
+            
+          </a>
         </div>
         <img alt={`${image}`} src={image} />
       </li>
