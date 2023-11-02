@@ -27,7 +27,7 @@ const ContactUs = ({setCurrentPage}: Props) => {
 
   return (
   <section id="contacts" className="bg-white-100 ">
-    <motion.div className="mx-auto w-5/6 pt-24 pb-32">
+    <motion.div className="mx-auto w-4/6 pt-24 pb-32">
       <motion.div
         onViewportEnter={() => setCurrentPage(CurrentPage.Contacts)}>
         {/*HEADER*/}

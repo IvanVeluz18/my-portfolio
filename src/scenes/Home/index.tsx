@@ -97,4 +97,5 @@ export default Home
   - yung green na "My Projects" na ang pinakasection
   - yung "OtherProjects" na ang start ng project 1 similar sa pinaggagayahan
   - repeat for other projects pero ibahin ang kulay and try wag gawing 100% vh
+  - gawan ng paraan yung colors
 */

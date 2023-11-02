@@ -8,34 +8,6 @@ import fashionbug from '@/assets/fashionbug.png'
 import gradmatic from '@/assets/gradmatic.png'
 import yologkd from '@/assets/yologkd.png'
 
-const ProjectsBlock: Array<ProjectType> = [
-  {
-    image: yologkd,
-    title: "YOLOv5- GKD",
-    description: 
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et."
-  },
-  {
-    image: gradmatic,
-    title: "Fashion Bug",
-    description: 
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id."
-  },
-  {
-    image: fashionbug,
-    title: "GradMatic",
-    description: 
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
-  },
-]
-
-const container = {
-  hidden: {},
-  visible: {
-    transition: {staggerChildren: 0.2}
-  }
-}
-
 const otherProjects: Array<OtherProjectType> = [
   {
     name: "Shirtfeed",
@@ -84,8 +56,8 @@ type Props = {
 const Projects = ({setCurrentPage}: Props) => {
   return (
     <>
-      <section id="projects" className=" bg-white-100">
-        <motion.div className="mx-auto w-5/6 pt-20 pb-1">
+      <section id="projects" className="">
+        <motion.div className="mx-auto w-4/6 pt-20 pb-1">
           <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
             <motion.div
               initial="hidden"
@@ -107,7 +79,7 @@ const Projects = ({setCurrentPage}: Props) => {
       <section className="w-full pt-24 pb-32 bg-primary-100 py-40">
         <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
           <motion.div
-          className="mx-auto w-5/6"
+          className="mx-auto w-4/6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -118,7 +90,7 @@ const Projects = ({setCurrentPage}: Props) => {
           }}
           >
             <div className="md:w-3/5">
-              <HText>FashionBug</HText>
+              <HText>YOLOv5 - GKD</HText>
               <p className="py-5">
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
                 tellus quam porttitor. Mauris velit euismod elementum arcu neque
@@ -127,6 +99,7 @@ const Projects = ({setCurrentPage}: Props) => {
               </p>
             </div>
           </motion.div>
+            {/*Left side
             <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
               <ul className="w-[2800px] whitespace-nowrap">
                 {otherProjects.map((item: OtherProjectType, index) => (
@@ -140,44 +113,112 @@ const Projects = ({setCurrentPage}: Props) => {
                 ))}
               </ul>
             </div>
+            */}
         </motion.div>
+        </section>
 
-        <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
-          <motion.div
-          className="mx-auto w-5/6"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          >
-            <div className="md:w-3/5">
-              <HText>FashionBug</HText>
-              <p className="py-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
-              </p>
-            </div>
+        <section className="w-full pt-24 pb-32 bg-primary-500 py-40">
+          <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
+            <motion.div
+            className="mx-auto w-4/6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            >
+              <div className="md:w-3/5">
+                <HText>FashionBug</HText>
+                <p className="py-5">
+                  Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                  tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                  facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                  enim mattis odio in risus nunc.
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
-            <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-              <ul className="w-[2800px] whitespace-nowrap">
-                {otherProjects.map((item: OtherProjectType, index) => (
-                  <OtherProject
-                    key={`${item.name}-${index}`}
-                    name={item.name}
-                    description={item.description}
-                    link={item.link}
-                    image={item.image}
-                  />
-                ))}
-              </ul>
-            </div>
-        </motion.div>
+      </section>
+
+      <section className="w-full pt-24 pb-32 bg-secondary-500 py-40">
+          <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
+            <motion.div
+            className="mx-auto w-4/6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            >
+              <div className="md:w-3/5">
+                <HText>PUP - AACCUP</HText>
+                <p className="py-5">
+                  Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                  tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                  facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                  enim mattis odio in risus nunc.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+      </section>
+
+      <section className="w-full pt-24 pb-32 bg-primary-100 py-40">
+          <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
+            <motion.div
+            className="mx-auto w-4/6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            >
+              <div className="md:w-3/5">
+                <HText>GradMatic</HText>
+                <p className="py-5">
+                  Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                  tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                  facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                  enim mattis odio in risus nunc.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+      </section>
+
+      <section className="w-full pt-24 pb-32 bg-primary-500 py-40">
+          <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
+            <motion.div
+            className="mx-auto w-4/6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            >
+              <div className="md:w-3/5">
+                <HText>Evogym</HText>
+                <p className="py-5">
+                  Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                  tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                  facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                  enim mattis odio in risus nunc.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
       </section>
   </>
   )
