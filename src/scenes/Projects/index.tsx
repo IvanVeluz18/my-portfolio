@@ -48,7 +48,7 @@ const Projects = ({setCurrentPage}: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
           >
-            <div className="md:w-3/5">
+            <div className="md:w-2/5">
               <HText>YOLOv5 - GKD</HText>
               <p className="py-5">
                 YOLOv5-GKD is a weapon detection system that utilizes the use of machine learning algorithm called YOLO (You only look once). For our thesis, we modified some parts of its
@@ -92,7 +92,7 @@ const Projects = ({setCurrentPage}: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
             >
-              <div className="md:w-3/5">
+              <div className="md:w-2/5">
                 <HText>FashionBug</HText>
                 <p className="py-5">
                   An Inventory Management System made for a clothing business. The system was created using C# Windows Form and MS SQL. The system has various features,
@@ -121,7 +121,7 @@ const Projects = ({setCurrentPage}: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
             >
-              <div className="md:w-3/5">
+              <div className="md:w-2/5">
                 <HText>PUP - AACCUP</HText>
                 <p className="py-5">
                   A website created on Google Sites. This project is intended to showcase the thesis papers and the qualifications of specific colleges inside our university
@@ -129,7 +129,7 @@ const Projects = ({setCurrentPage}: Props) => {
                 </p>
                 <button
                     type="submit"
-                    className="mt-5 rounded-lg bg-primary-500 px-12 py-3 transition duration-300 hover:text-white">
+                    className="mt-5 rounded-lg bg-primary-500 px-20 py-3 transition duration-300 hover:text-white">
                     VISIT SITE
                 </button>
               </div>
@@ -150,7 +150,7 @@ const Projects = ({setCurrentPage}: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
             >
-              <div className="md:w-3/5">
+              <div className="md:w-2/5">
                 <HText>GradMatic</HText>
                 <p className="py-5">
                   An automatic grading system made to aid teachers from public schools in computing and encoding grades for various subjects for numerous sections of students.
@@ -179,7 +179,7 @@ const Projects = ({setCurrentPage}: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
             >
-              <div className="md:w-3/5">
+              <div className="md:w-2/5">
                 <HText>Evogym</HText>
                 <p className="py-5">
                   A dynamic website created using React, Typescript, CSS, Tailwind and other technologies like framer motion. This project utilizes the power of react

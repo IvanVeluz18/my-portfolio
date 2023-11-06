@@ -43,10 +43,9 @@ const ContactUs = ({setCurrentPage}: Props) => {
             <HText>
               <span className="text-primary-500">EMAIL ME</span>
             </HText>
-            <p className="my-5">
-              Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-              sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-              adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            <p className="md:w-3/5 pt-8">
+            Want to have a website of your own or for your business? How about an application for your store? 
+            Or just any project you think you want to build. Let's make it make it happen.
             </p>
         </motion.div>
 
