@@ -24,7 +24,7 @@ const Navbar = ({isTopOfPage, currentPage, setCurrentPage}: Props) => {
         <div  className={`${flexBetween} mx-auto w-5/6 md:w-4/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             <div className={`w-full gap-16 basis-3/5 font-montserrat text-2xl font-bold`}>
-                <a href="">Ivan{""}<span className="text-primary-500">Veluz</span></a>
+                <a href=" ">Ivan{""}<span className="text-primary-500">Veluz</span></a>
             </div>
 
             {/*Right side*/}

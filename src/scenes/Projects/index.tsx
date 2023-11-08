@@ -6,7 +6,7 @@ import OtherProject from "./OtherProjects";
 import ProjectContainer from "./ProjectContainer";
 import fashionbug from '@/assets/fashionbug.png'
 import gradmatic from '@/assets/gradmatic.png'
-import yologkd from '@/assets/yologkd.png'
+import yologkd from '@/assets/yologkd (removebg).png'
 
 type Props = {
   setCurrentPage: (value: CurrentPage) => void;
@@ -35,7 +35,7 @@ const Projects = ({setCurrentPage}: Props) => {
         </motion.div>
       </section>
       <section id="project-contents">
-      <section className="w-full pt-24 pb-32 bg-primary-100 py-40">
+      <section className="w-full pt-28 pb-32 bg-primary-100 py-40">
         <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
           <motion.div
           className="mx-auto w-4/6"
@@ -48,17 +48,24 @@ const Projects = ({setCurrentPage}: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
           >
-            <div className="md:w-2/5">
+            <div className="">
               <HText>YOLOv5 - GKD</HText>
-              <p className="py-5">
-                YOLOv5-GKD is a weapon detection system that utilizes the use of machine learning algorithm called YOLO (You only look once). For our thesis, we modified some parts of its
-                neural network and trained the model using our own datasets of guns, knives and improvised weapons commonly used in the Philippines. The system and the algorithm was developed in Python.
-              </p>
-              <button
-                    type="submit"
-                    className="mt-5 rounded-lg bg-secondary-500 px-12 py-3 transition duration-300 hover:text-white">
-                    VIEW ON GITHUB
-              </button>
+                <div className="md:flex flex-row">
+                  <div className="md:w-2/6">
+                      <p className="py-5">
+                        YOLOv5-GKD is a weapon detection system that utilizes the use of machine learning algorithm called YOLO (You only look once). For our thesis, we modified some parts of its
+                        neural network and trained the model using our own datasets of guns, knives and improvised weapons commonly used in the Philippines. The system and the algorithm was developed in Python.
+                      </p>
+                      <button
+                            type="submit"
+                            className="mt-5 rounded-lg bg-secondary-500 px-12 py-3 transition duration-300 hover:text-white">
+                            VIEW ON GITHUB
+                      </button>
+                  </div>
+                <div className="pt-16 scale-150 md:pl-32 md:pt-0">
+                      <img src={yologkd} alt="" className="h-auto md:max-w-xl " />
+                    </div>
+                </div>
             </div>
           </motion.div>
             {/*Left side
