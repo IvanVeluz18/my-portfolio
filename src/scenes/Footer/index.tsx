@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-neutral-200 text-center text-white dark:bg-primary-500">
+    <footer id="footer" className="text-center text-white bg-primary-500">
       <div className="pt-9">
         <div className="mb-9 flex justify-center">
           <a href="https://www.facebook.com/johnivan.veluz" target="blank" className="mr-9 text-neutral-800 dark:text-neutral-200">
@@ -48,7 +48,7 @@ const Footer = () => {
 
       {/* <!--Copyright section--> */}
       <div
-        className="bg-neutral-300 p-4 text-center text-neutral-600 dark:bg-primary-100">
+        className= "p-4 text-center text-neutral-600 bg-primary-100">
         Designed and Built by:
         <a
           className="text-neutral-800"

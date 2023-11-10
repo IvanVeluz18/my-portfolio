@@ -51,7 +51,7 @@ const Home = ({setCurrentPage}: Props) => {
           }}
           className="mx-auto w-6/6 items-center justify-normal md:h-5/6 md:w-4/6 sm:justify-center">
               <p className="mt-4 ml-4 text-2xl items-center md:text-3xl md:ml-0">
-                Fullstack Web Developer | Software Engineer | AI/ML
+                Full Stack Web Developer | Software Engineer | AI/ML
             </p>
             <motion.div
               initial="hidden"
@@ -63,10 +63,10 @@ const Home = ({setCurrentPage}: Props) => {
                 visible: {opacity: 1, y: 0}
               }}
             >
-              <span className="mx-auto ml-0 space-x-2 flex items-center justify-center md:justify-normal md:ml-6">
+              <span className="mx-auto space-x-2 flex items-center justify-center md:pl-2 md:justify-normal md:ml-6">
                   <a href={CV}  download="CV">
                     <button type="submit"
-                            className="mt-5 rounded-full bg-secondary-500 px-8 py-3 transition duration-300 text-primary-500 hover:text-white">Download CV</button>
+                            className="mt-5 rounded-full bg-secondary-500 px-4 py-3 transition duration-300 text-primary-500 md:px-8 hover:text-white">Download CV</button>
                   </a>
                   <a href="https://github.com/IvanVeluz18" target="blank">
                     <button type="submit" className="mt-5 rounded-full">
