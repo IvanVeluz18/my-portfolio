@@ -3,7 +3,6 @@ import {CurrentPage} from '@/shared/types'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "./Link";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import logo from "@/assets/logo.png"
 
 type Props = {
   isTopOfPage: boolean;
