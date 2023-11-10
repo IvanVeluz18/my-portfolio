@@ -50,7 +50,7 @@ const Home = ({setCurrentPage}: Props) => {
             visible: {opacity: 1, x: 0}
           }}
           className="mx-auto w-6/6 items-center justify-normal md:h-5/6 md:w-4/6 sm:justify-center">
-              <p className="mt-4 ml-4 text-2xl items-center justify-normal md:text-3xl md:ml-0">
+              <p className="mt-4 ml-4 text-2xl items-center md:text-3xl md:ml-0">
                 Fullstack Web Developer | Software Engineer | AI/ML
             </p>
             <motion.div
@@ -63,10 +63,10 @@ const Home = ({setCurrentPage}: Props) => {
                 visible: {opacity: 1, y: 0}
               }}
             >
-              <span className="mx-auto ml-0 space-x-2 flex items-center justify-center md:justify-normal md:ml-8">
+              <span className="mx-auto ml-0 space-x-2 flex items-center justify-center md:justify-normal md:ml-6">
                   <a href={CV}  download="CV">
                     <button type="submit"
-                            className="mt-5 rounded-full bg-secondary-500 px-8 py-3 transition duration-300 hover:text-white">Download CV</button>
+                            className="mt-5 rounded-full bg-secondary-500 px-8 py-3 transition duration-300 text-primary-500 hover:text-white">Download CV</button>
                   </a>
                   <a href="https://github.com/IvanVeluz18" target="blank">
                     <button type="submit" className="mt-5 rounded-full">
@@ -77,8 +77,8 @@ const Home = ({setCurrentPage}: Props) => {
                   </a>
                   <a href="https://www.linkedin.com/in/john-ivan-veluz-4179b3193/" target="_blank">
                     <button type="submit" className="mt-5 rounded-full">
-                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="58" height="58" viewBox="0 0 45 45">
-                      <path fill="#0078d4" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path d="M30,35v-9c0-1.103-0.897-2-2-2s-2,0.897-2,2v9h-6V18h6v1.027C27.04,18.359,28.252,18,29.5,18	c3.584,0,6.5,2.916,6.5,6.5V35H30z M13,35V18h2.966C14.247,18,13,16.738,13,14.999C13,13.261,14.267,12,16.011,12	c1.696,0,2.953,1.252,2.989,2.979C19,16.733,17.733,18,15.988,18H19v17H13z" opacity=".05"></path><path d="M30.5,34.5V26c0-1.378-1.121-2.5-2.5-2.5s-2.5,1.122-2.5,2.5v8.5h-5v-16h5v1.534	c1.09-0.977,2.512-1.534,4-1.534c3.309,0,6,2.691,6,6v10H30.5z M13.5,34.5v-16h5v16H13.5z M15.966,17.5	c-1.429,0-2.466-1.052-2.466-2.501c0-1.448,1.056-2.499,2.511-2.499c1.436,0,2.459,1.023,2.489,2.489	c0,1.459-1.057,2.511-2.512,2.511H15.966z" opacity=".07"></path><path fill="#fff" d="M14,19h4v15h-4V19z M15.988,17h-0.022C14.772,17,14,16.11,14,14.999C14,13.864,14.796,13,16.011,13	c1.217,0,1.966,0.864,1.989,1.999C18,16.11,17.228,17,15.988,17z M35,24.5c0-3.038-2.462-5.5-5.5-5.5	c-1.862,0-3.505,0.928-4.5,2.344V19h-4v15h4v-8c0-1.657,1.343-3,3-3s3,1.343,3,3v8h4C35,34,35,24.921,35,24.5z"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="56" height="56" viewBox="-3 -3 29 29">
+                      <path fill-rule="evenodd" d="M 21.125 0 L 4.875 0 C 2.183594 0 0 2.183594 0 4.875 L 0 21.125 C 0 23.816406 2.183594 26 4.875 26 L 21.125 26 C 23.816406 26 26 23.816406 26 21.125 L 26 4.875 C 26 2.183594 23.816406 0 21.125 0 Z M 8.039063 22.070313 L 4 22.070313 L 3.976563 9.976563 L 8.015625 9.976563 Z M 5.917969 8.394531 L 5.894531 8.394531 C 4.574219 8.394531 3.722656 7.484375 3.722656 6.351563 C 3.722656 5.191406 4.601563 4.3125 5.945313 4.3125 C 7.289063 4.3125 8.113281 5.191406 8.140625 6.351563 C 8.140625 7.484375 7.285156 8.394531 5.917969 8.394531 Z M 22.042969 22.070313 L 17.96875 22.070313 L 17.96875 15.5 C 17.96875 13.910156 17.546875 12.828125 16.125 12.828125 C 15.039063 12.828125 14.453125 13.558594 14.171875 14.265625 C 14.066406 14.519531 14.039063 14.867188 14.039063 15.222656 L 14.039063 22.070313 L 9.945313 22.070313 L 9.921875 9.976563 L 14.015625 9.976563 L 14.039063 11.683594 C 14.5625 10.875 15.433594 9.730469 17.519531 9.730469 C 20.105469 9.730469 22.039063 11.417969 22.039063 15.046875 L 22.039063 22.070313 Z"></path>
                       </svg>
                     </button>
                   </a>

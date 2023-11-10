@@ -117,12 +117,13 @@ const ContactUs = ({setCurrentPage}: Props) => {
 
                   <button
                     type="submit"
-                    className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-300 hover:text-white"
+                    className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-300 text-primary-500 hover:text-white"
                   >
                     SUBMIT
                   </button>
               </form>
           </motion.div>
+          {/*}
           <motion.div className="relative mt-16 basis-2/5 md:mt-0"
             initial="hidden"
             whileInView="visible"
@@ -136,6 +137,7 @@ const ContactUs = ({setCurrentPage}: Props) => {
                 img placeholder
               </div>
           </motion.div>
+          */}
         </div>
       </motion.div>
     </motion.div>
