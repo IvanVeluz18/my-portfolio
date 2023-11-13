@@ -45,7 +45,7 @@ const ContactUs = ({setCurrentPage}: Props) => {
             </HText>
             <p className="md:w-3/5 pt-8">
             Want to have a website of your own or for your business? How about an application for your store? 
-            Or just any project you think you want to build. Let's make it make it happen.
+            Or just any project you think you want to build. Let's make it happen.
             </p>
         </motion.div>
 
