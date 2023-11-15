@@ -34,6 +34,7 @@ const Projects = ({setCurrentPage}: Props) => {
           </motion.div>
         </motion.div>
       </section>
+      
       <section id="project-contents">
         <section className="w-full pt-28 pb-32 bg-proj-1 py-40">
           <motion.div onViewportEnter={() => setCurrentPage(CurrentPage.Projects)}>
@@ -68,13 +69,13 @@ const Projects = ({setCurrentPage}: Props) => {
                                   initial="hidden"
                                   whileInView="visible"
                                   viewport={{ once: true, amount: 0.5 }}
-                                  transition={{ duration: 0.5 }}
+                                  transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
-                                    hidden: { opacity: 0, x: 50 },
-                                    visible: { opacity: 1, x: 0 },
+                                    hidden: { opacity: 0, y: 50 },
+                                    visible: { opacity: 1, y: 0 },
                                   }} 
                       className="pt-16 md:pt-0">
-                        <img src={yologkd} alt="" className="h-auto md:w-auto drop-shadow-xl" />
+                        <img src={yologkd} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
                       </motion.div>
                   </div>
               </div>
@@ -130,13 +131,13 @@ const Projects = ({setCurrentPage}: Props) => {
                                   initial="hidden"
                                   whileInView="visible"
                                   viewport={{ once: true, amount: 0.5 }}
-                                  transition={{ duration: 0.5 }}
+                                  transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
-                                    hidden: { opacity: 0, x: 50 },
-                                    visible: { opacity: 1, x: 0 },
+                                    hidden: { opacity: 0, y: 50 },
+                                    visible: { opacity: 1, y: 0 },
                                   }}
                       className="pt-16 md:pt-0">
-                        <img src={fashionbug} alt="" className="h-auto md:w-auto drop-shadow-xl" />
+                        <img src={fashionbug} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
                       </motion.div>
                   </div>
                 </div>
@@ -174,16 +175,16 @@ const Projects = ({setCurrentPage}: Props) => {
                         </a>
                     </div>
                       <motion.div 
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{ once: true, amount: 0.5 }}
-                      transition={{ duration: 0.5 }}
-                      variants={{
-                        hidden: { opacity: 0, x: 50 },
-                        visible: { opacity: 1, x: 0 },
+                                  initial="hidden"
+                                  whileInView="visible"
+                                  viewport={{ once: true, amount: 0.5 }}
+                                  transition={{ delay: 0.2, duration: 0.5 }}
+                                  variants={{
+                                    hidden: { opacity: 0, y: 50 },
+                                    visible: { opacity: 1, y: 0 },
                       }}
                       className="pt-16 md:pt-0">
-                        <img src={aaccup} alt="" className="h-auto md:w-auto drop-shadow-xl" />
+                        <img src={aaccup} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
                       </motion.div>
                   </div>
                 </div>
@@ -221,16 +222,16 @@ const Projects = ({setCurrentPage}: Props) => {
                         </a>
                     </div>
                     <motion.div 
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, x: 50 },
-                      visible: { opacity: 1, x: 0 },
+                                  initial="hidden"
+                                  whileInView="visible"
+                                  viewport={{ once: true, amount: 0.5 }}
+                                  transition={{ delay: 0.2, duration: 0.5 }}
+                                  variants={{
+                                    hidden: { opacity: 0, y: 50 },
+                                    visible: { opacity: 1, y: 0 },
                     }}
                     className="pt-16 md:pt-0">
-                      <img src={gradmatic} alt="" className="h-auto md:w-auto drop-shadow-xl" />
+                      <img src={gradmatic} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
                     </motion.div>
                   </div>
                 </div>
@@ -268,16 +269,16 @@ const Projects = ({setCurrentPage}: Props) => {
                         </a>
                     </div>
                     <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, x: 50 },
-                      visible: { opacity: 1, x: 0 },
+                                  initial="hidden"
+                                  whileInView="visible"
+                                  viewport={{ once: true, amount: 0.5 }}
+                                  transition={{ delay: 0.2, duration: 0.5 }}
+                                  variants={{
+                                    hidden: { opacity: 0, y: 50 },
+                                    visible: { opacity: 1, y: 0 },
                     }} 
                     className="pt-16 md:pt-0">
-                      <img src={gym} alt="" className="h-auto md:w-auto drop-shadow-xl" />
+                      <img src={gym} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
                     </motion.div>
                   </div>
                 </div>

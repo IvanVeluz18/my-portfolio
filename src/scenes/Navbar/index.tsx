@@ -25,7 +25,7 @@ const Navbar = ({isTopOfPage, currentPage, setCurrentPage}: Props) => {
           <div className={`${flexBetween} w-full gap-16`}>
             <div className={`w-full gap-16 basis-3/5 font-montserrat text-2xl font-bold`}>
                 <a href=" ">Ivan{""}<span className="text-primary-500">Veluz</span></a>
-                {/* <a href=""><img src={logo} alt="" className="l-auto w-5" /></a> */}
+                {/* <a href=""><img src={icon} alt="" className="l-auto w-5" /></a> */}
             </div>
 
             {/*Right side*/}
