@@ -75,7 +75,7 @@ const Projects = ({setCurrentPage}: Props) => {
                                     visible: { opacity: 1, y: 0 },
                                   }} 
                       className="pt-16 md:pt-0">
-                        <img src={yologkd} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
+                        <img src={yologkd} alt="" className="h-auto md:w-auto drop-shadow-xl" />
                       </motion.div>
                   </div>
               </div>
@@ -137,7 +137,7 @@ const Projects = ({setCurrentPage}: Props) => {
                                     visible: { opacity: 1, y: 0 },
                                   }}
                       className="pt-16 md:pt-0">
-                        <img src={fashionbug} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
+                        <img src={fashionbug} alt="" className="h-auto md:w-auto drop-shadow-xl" />
                       </motion.div>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ const Projects = ({setCurrentPage}: Props) => {
                                     visible: { opacity: 1, y: 0 },
                       }}
                       className="pt-16 md:pt-0">
-                        <img src={aaccup} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
+                        <img src={aaccup} alt="" className="h-auto md:w-auto drop-shadow-xl" />
                       </motion.div>
                   </div>
                 </div>
@@ -231,7 +231,7 @@ const Projects = ({setCurrentPage}: Props) => {
                                     visible: { opacity: 1, y: 0 },
                     }}
                     className="pt-16 md:pt-0">
-                      <img src={gradmatic} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
+                      <img src={gradmatic} alt="" className="h-auto md:w-auto drop-shadow-xl" />
                     </motion.div>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ const Projects = ({setCurrentPage}: Props) => {
                                     visible: { opacity: 1, y: 0 },
                     }} 
                     className="pt-16 md:pt-0">
-                      <img src={gym} alt="" className="h-auto scale-125 md:scale-100 md:w-auto drop-shadow-xl" />
+                      <img src={gym} alt="" className="h-auto md:w-auto drop-shadow-xl" />
                     </motion.div>
                   </div>
                 </div>
