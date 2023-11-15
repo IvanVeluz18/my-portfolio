@@ -9,7 +9,7 @@ type Props = {
 const About = ({setCurrentPage}: Props) => {
   return (
     <section id="about" className="">
-      <motion.div className="mx-auto px-4 pt-24 pb-24 md:px-0 md:w-3/6">
+      <motion.div className="mx-auto px-4 pt-24 pb-4 md:px-0 md:w-3/6">
         <motion.div  onViewportEnter={() => setCurrentPage(CurrentPage.About)}>
           <motion.div className="md:w-/5"
             initial="hidden"

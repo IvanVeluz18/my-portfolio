@@ -68,7 +68,7 @@ const Projects = ({setCurrentPage}: Props) => {
                       <motion.div
                                   initial="hidden"
                                   whileInView="visible"
-                                  viewport={{ once: true, amount: 0.5 }}
+                                  viewport={{ once: true, amount: 0.25 }}
                                   transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
                                     hidden: { opacity: 0, y: 50 },
@@ -130,7 +130,7 @@ const Projects = ({setCurrentPage}: Props) => {
                       <motion.div 
                                   initial="hidden"
                                   whileInView="visible"
-                                  viewport={{ once: true, amount: 0.5 }}
+                                  viewport={{ once: true, amount: 0.25 }}
                                   transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
                                     hidden: { opacity: 0, y: 50 },
@@ -177,7 +177,7 @@ const Projects = ({setCurrentPage}: Props) => {
                       <motion.div 
                                   initial="hidden"
                                   whileInView="visible"
-                                  viewport={{ once: true, amount: 0.5 }}
+                                  viewport={{ once: true, amount: 0.25 }}
                                   transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
                                     hidden: { opacity: 0, y: 50 },
@@ -224,7 +224,7 @@ const Projects = ({setCurrentPage}: Props) => {
                     <motion.div 
                                   initial="hidden"
                                   whileInView="visible"
-                                  viewport={{ once: true, amount: 0.5 }}
+                                  viewport={{ once: true, amount: 0.25 }}
                                   transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
                                     hidden: { opacity: 0, y: 50 },
@@ -271,7 +271,7 @@ const Projects = ({setCurrentPage}: Props) => {
                     <motion.div
                                   initial="hidden"
                                   whileInView="visible"
-                                  viewport={{ once: true, amount: 0.5 }}
+                                  viewport={{ once: true, amount: 0.25 }}
                                   transition={{ delay: 0.2, duration: 0.5 }}
                                   variants={{
                                     hidden: { opacity: 0, y: 50 },
